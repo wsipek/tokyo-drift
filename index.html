@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tokyo Drift</title>
+    <style>
+        body {
+            background-color: #1a1a1a;
+            color: #e0e0e0;
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+        }
+        .header {
+            text-align: center;
+            padding: 50px 0;
+        }
+        .header h1 {
+            color: #52f6ff;
+            text-shadow: 0 0 10px #52f6ff, 0 0 20px #52f6ff, 0 0 30px #52f6ff, 0 0 40px #52f6ff;
+            font-size: 3em;
+        }
+        .content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .content div {
+            background-color: #2e2e2e;
+            border-radius: 10px;
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+            margin: 20px;
+            padding: 20px;
+            width: 30%;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .content div:hover {
+            transform: translateY(-10px);
+            box-shadow: 5px 5px 25px rgba(0, 0, 0, 0.7);
+        }
+        .content div h2 {
+            color: #52f6ff;
+            text-shadow: 0 0 10px #52f6ff, 0 0 20px #52f6ff, 0 0 30px #52f6ff, 0 0 40px #52f6ff;
+        }
+        .content div p {
+            text-shadow: 1px 1px 2px #333;
+        }
+        .content div img {
+            max-width: 100%;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+        .content div img:hover {
+            transform: scale(1.05);
+        }
+        .video-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .audio-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .audio-container audio {
+            display: block;
+            margin: 10px auto;
+        }
+        .custom-button {
+            padding: 10px 20px;
+            background-color: #52f6ff;
+            color: #1a1a1a;
+            border: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        .custom-button:hover {
+            background-color: #36b1cc;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Токійський Дрифт</h1>
+        </div>
+
+        <div class="content">
+            <div>
+                <h2>Історія Дрифтингу</h2>
+                <p>Дрифтинг почався в Японії в 1970-х роках. Водії ганяли по гірським дорогам, змагаючись у керуванні автомобілями на високій швидкості, що згодом перетворилося на змагання з дрифту.</p>
+                <img src="1.gif" alt="Classic drift car">
+            </div>
+            <div>
+                <h2>Легендарні Автомобілі</h2>
+                <p>Одними з найпопулярніших автомобілів для дрифту були Nissan Silvia, Toyota AE86, та Mazda RX-7. Ці машини відомі своєю легкою конструкцією та потужними двигунами.</p>
+                <img src="2.gif" alt="Legendary drift car">
+            </div>
+            <div>
+                <h2>Знамениті Гонщики</h2>
+                <p>Кейчи Цучія, відомий як "Батько дрифту", є одним з найвідоміших японських гонщиків, який зробив дрифтинг популярним у всьому світі.</p>
+                <img src="3.jpg" alt="Famous drift racer">
+            </div>
+        </div>
+
+        <div class="video-container">
+            <h2>Гоночні Відео</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/6dztJE2A4Oc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+
+        <div class="audio-container">
+            <h2>Music</h2>
+            <audio controls>
+                <source src="1.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+            <audio controls>
+                <source src="2.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+            <audio controls>
+                <source src="3.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+            <audio controls>
+                <source src="4.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+            <audio controls>
+                <source src="5.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+    </div>
+</body>
+</html>
